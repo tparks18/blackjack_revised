@@ -119,6 +119,7 @@ while not done:
             print('Invalid Command')
 
     if player.count_cards() > 21:
+        print("Player's hand: {}".format(player.show_hand()))
         print('Bust! Dealer Wins')
         if input("Wanna play again? (y/n)").lower() != 'y':
             break
